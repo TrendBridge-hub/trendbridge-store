@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendBridge | Curated Trends. Delivered.</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen">
+    <div class="shipping-banner">
+        FREE SHIPPING ON ALL ORDERS OVER $35
+    </div>
+    
+    <header class="bg-white/80 backdrop-blur-md border-b sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-extrabold tracking-tighter text-accent">TrendBridge</a>
+            <div class="flex items-center gap-6">
+                <button id="cart-btn" class="relative p-2 text-primary hover:text-accent transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    <span id="cart-count" class="absolute -top-1 -right-1 bg-accent text-white text-[10px] font-bold rounded-full h-5 w-5 flex items-center justify-center hidden border-2 border-white">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-gray-50 py-20 lg:py-32">
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-3xl">
+                    <span class="inline-block bg-accent/10 text-accent px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">Trending Worldwide</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-[1.1] tracking-tight text-primary">
+                        Curated Trends. <br class="hidden md:block"> <span class="text-accent text-indigo-600">Delivered.</span>
+                    </h1>
+                    <p class="text-xl text-secondary mb-10 leading-relaxed max-w-xl font-medium">
+                        Stop hunting. We source the most viral, high-demand products globally and deliver them to your door with guaranteed quality.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#products" class="btn-primary">Shop The Collection</a>
+                        <a href="#" class="btn-secondary">New Arrivals</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative background element -->
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-teal-50/50 to-transparent hidden lg:block"></div>
+        </section>
+
+        <!-- Value Props -->
+        <section class="py-12 border-y bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="bg-gray-50 p-4 rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                        </div>
+                        <h3 class="font-bold text-sm uppercase">Curated Quality</h3>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="bg-gray-50 p-4 rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+                        </div>
+                        <h3 class="font-bold text-sm uppercase">Secure Checkout</h3>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="bg-gray-50 p-4 rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </div>
+                        <h3 class="font-bold text-sm uppercase">Fast Shipping</h3>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="bg-gray-50 p-4 rounded-full mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M9 12l2 2 4-4"/></svg>
+                        </div>
+                        <h3 class="font-bold text-sm uppercase">Satisfaction Guarenteed</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section id="products" class="container mx-auto px-4 py-20 lg:py-32">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Trending Now</h2>
+                    <p class="text-secondary font-medium">Hand-picked viral products at reasonable markups.</p>
+                </div>
+                <a href="#" class="text-accent font-bold border-b-2 border-accent/20 hover:border-accent transition-all pb-1 hidden sm:block">View All</a>
+            </div>
+            
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Products will be injected here -->
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="bg-primary text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight">Join the TrendBridge Insiders</h2>
+                <p class="text-gray-400 mb-10 max-w-xl mx-auto text-lg">Get first access to new product drops and enjoy 10% off your first order.</p>
+                <form class="max-w-md mx-auto flex gap-4">
+                    <input type="email" placeholder="Enter your email" class="flex-1 bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-accent transition-colors">
+                    <button type="button" class="btn-primary whitespace-nowrap">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="fixed inset-0 z-[60] hidden">
+        <div id="cart-overlay" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        <div class="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col">
+            <div class="p-6 border-b flex justify-between items-center">
+                <h2 class="text-xl font-bold">Your Cart</h2>
+                <button id="close-cart" class="p-2 hover:bg-gray-100 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-6">
+                <!-- Cart items will be injected here -->
+            </div>
+            <div class="p-6 border-t bg-gray-50">
+                <div class="flex justify-between mb-4">
+                    <span class="text-secondary font-medium">Total</span>
+                    <span id="cart-total" class="text-xl font-bold">$0.00</span>
+                </div>
+                <button id="checkout-btn" class="w-full btn-primary">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <a href="/" class="text-2xl font-extrabold tracking-tighter text-accent mb-6 block">TrendBridge</a>
+                    <p class="text-secondary leading-relaxed max-w-sm">Curating the globe's trendiest products and delivering them directly to you. Premium quality, trend-aware, and always authentic.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase text-xs tracking-widest mb-6">Shop</h4>
+                    <ul class="space-y-4 text-secondary text-sm font-medium">
+                        <li><a href="#" class="hover:text-accent">All Products</a></li>
+                        <li><a href="#" class="hover:text-accent">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-accent">Best Sellers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase text-xs tracking-widest mb-6">Support</h4>
+                    <ul class="space-y-4 text-secondary text-sm font-medium">
+                        <li><a href="#" class="hover:text-accent">Shipping Policy</a></li>
+                        <li><a href="#" class="hover:text-accent">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-accent">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-secondary text-xs">&copy; 2026 TrendBridge. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <!-- Placeholder for trust badges -->
+                    <div class="h-6 w-10 bg-gray-100 rounded"></div>
+                    <div class="h-6 w-10 bg-gray-100 rounded"></div>
+                    <div class="h-6 w-10 bg-gray-100 rounded"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>

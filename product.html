@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | TrendBridge</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="min-h-screen">
+    <header class="bg-white border-b sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold tracking-tight text-accent">TrendBridge</a>
+            <div class="flex items-center gap-6">
+                <button id="cart-btn" class="relative p-2 text-primary hover:text-accent transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    <span id="cart-count" class="absolute -top-1 -right-1 bg-accent text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center hidden">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div id="product-detail" class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <!-- Product details will be injected here -->
+            <div class="animate-pulse bg-gray-200 rounded-2xl h-[500px]"></div>
+            <div class="space-y-6">
+                <div class="h-8 bg-gray-200 rounded w-3/4"></div>
+                <div class="h-6 bg-gray-200 rounded w-1/4"></div>
+                <div class="h-24 bg-gray-200 rounded w-full"></div>
+                <div class="h-12 bg-gray-200 rounded w-1/2"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cart Sidebar (Same as index) -->
+    <div id="cart-sidebar" class="fixed inset-0 z-[60] hidden">
+        <div id="cart-overlay" class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        <div class="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col">
+            <div class="p-6 border-b flex justify-between items-center">
+                <h2 class="text-xl font-bold">Your Cart</h2>
+                <button id="close-cart" class="p-2 hover:bg-gray-100 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-6">
+                <!-- Cart items will be injected here -->
+            </div>
+            <div class="p-6 border-t bg-gray-50">
+                <div class="flex justify-between mb-4">
+                    <span class="text-secondary font-medium">Total</span>
+                    <span id="cart-total" class="text-xl font-bold">$0.00</span>
+                </div>
+                <button id="checkout-btn" class="w-full btn-primary">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t mt-20 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-secondary">&copy; 2026 TrendBridge. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
