@@ -1,0 +1,53 @@
+json
+[
+  {
+    "id": "rhod-blush",
+    "name": "Rhod Pocket Blush & Lip Stick",
+    "price": 5.99,
+    "description": "Viral lip and cheek blush stick — hydrating, natural-looking color, easy to apply. Perfect for on-the-go touch-ups.",
+    "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800",
+    "trending_score": 98,
+    "stripe_link": "https://buy.stripe.com/aFa9AV3TkfuX8D9atXenS00",
+    "category": "Beauty"
+  },
+  {
+    "id": "rgb-led",
+    "name": "Smart RGB LED Strip Lights",
+    "price": 7.99,
+    "description": "Bluetooth & APP controlled LED strip lights. 16 million colors, syncs with music. Ideal for bedroom and gaming setups.",
+    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S32abacd516934670b48e60d83d3f5d14z.jpg_480x480q75.jpg_.avif",
+    "trending_score": 95,
+    "stripe_link": "https://buy.stripe.com/4gM7sNahIbeH9Hd0TnenS01",
+    "category": "Home Decor"
+  },
+  {
+    "id": "pd-charger",
+    "name": "PD 20W USB-C Fast Charger",
+    "price": 9.99,
+    "description": "High-speed 20W PD charger for iPhone and Android devices. Compact design with safety protection.",
+    "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=800",
+    "trending_score": 92,
+    "stripe_link": "https://buy.stripe.com/fZueVfexYdmPcTpdG9enS02",
+    "category": "Tech Gadgets"
+  },
+  {
+    "id": "watch-band",
+    "name": "Sport Silicone Apple Watch Band",
+    "price": 12.99,
+    "description": "Durable, soft silicone sport band for Apple Watch. Breathable design, perfect for workouts and daily wear.",
+    "image": "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&q=80&w=800",
+    "trending_score": 90,
+    "stripe_link": "https://buy.stripe.com/fZu28tfC26YrcTpby1enS03",
+    "category": "Accessories"
+  },
+  {
+    "id": "vintage-sunglasses",
+    "name": "Vintage Square Sunglasses",
+    "price": 12.99,
+    "description": "Classic square vintage sunglasses with UV400 protection. Polarized lenses for superior clarity and style.",
+    "image": "https://ae-pic-a1.aliexpress-media.com/kf/S18f66717c3b04947a6055c3d788f96bfu.jpg_480x480q75.jpg_.avif",
+    "trending_score": 88,
+    "stripe_link": "https://buy.stripe.com/bJeeVfblMgz1f1xdG9enS04",
+    "category": "Fashion"
+  }
+]
